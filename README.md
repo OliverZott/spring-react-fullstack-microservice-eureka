@@ -51,14 +51,18 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 ------------------------------------------------------------
 # Create and run
+- `http://localhost:8761`
 
-- Run application in IDE and check http://localhost:8761
-
-OR
-- #### Prerequisite: 
-  Create Gradle Wrapper for application:
+### JAR - Prerequisite:
+- Create Gradle Wrapper for application: `gradle wrapper`
   https://docs.gradle.org/current/userguide/gradle_wrapper.html
-  - 
-- Create and run **JAR**
-  - `gradle clean build` or if maven: `mvn clean install`
+### JAR - Create and Run
+- Create **JAR**
+  - Local installations:
+    - `gradle clean build` or if maven:
+    - `mvn clean install`
+  - With wrapper (no local installation needed)
+    - `./gradlew clean build`
+
+- Run
   - `java –jar <JARFILE> ` (inside */build/libs* )
